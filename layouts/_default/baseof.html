@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language }}">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="canonical" href="{{ .Permalink }}" />
+	{{ block "description" .}}
+	{{ end }}
+	<title>
+		{{ block "title" . }}
+		{{ .Site.Title }}: {{ .Site.Params.Tagline }}
+		{{ end }}
+	</title>
+
+	<!-- Google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap"
+		rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+	<link rel="stylesheet" href="/css/custom.css">
+</head>
+
+<body>
+  <header>
+			{{ block "header" . }}
+			<h1 class="site-title">{{ .Site.Title }}</h1>
+			<p class="tagline">{{ .Site.Params.Tagline }}</p>
+      <nav>
+        <a href="/" class="current">Home</a>
+        <a href="#videos">Videos</a>
+        <a href="#writing">Writing</a>
+        <a href="#maps">Maps</a>
+      </nav>
+			{{ end }}
+		</header>
+
+
+    <main class="container">
+
+		<div class="content">
+			{{ block "main" . }}
+			{{ if .Page.Title }}
+			<h2>{{ .Page.Title }}</h2>
+			{{ end }}
+			{{ .Content }}
+			{{ end }}
+		</div>
+
+		<footer>
+			{{ block "footer" . }}
+			<div class="row">
+				<div class="footer-logo">
+					<a href="https://rrchnm.org/">
+						<img class="logo" src="/img/rrchnm-logo.png" alt="RRCHNM logo" />
+					</a>
+				</div>
+				<div class="footer-description">
+					The <span class="semibold">Out and About</span> project is part of the <a
+						href="https://rrchnm.org/">Roy Rosenzweig Center for History and New Media</a>.
+				</div>
+			</div>
+			{{ end }}
+		</footer>
+
+	</main>
+
+</body>
+
+</html>
+

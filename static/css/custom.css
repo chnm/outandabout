@@ -1,0 +1,21 @@
+/* Custom CSS */
+
+footer .row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+footer .footer-logo {
+    flex-shrink: 0;
+}
+
+footer .footer-description {
+    flex-grow: 1;
+    font-size: 0.7rem;
+}
+
+footer .logo {
+    max-width: 150px;
+    height: auto;
+}
