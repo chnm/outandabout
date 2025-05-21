@@ -1,0 +1,18 @@
+baseURL: 'https://example.org/'
+languageCode: 'en-us'
+title: 'Out and About'
+
+params:
+  tagline: "Tagline for the project"
+  description: 'Description text for the project.'
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+disableKinds:
+  - taxomony
+
+build:
+  noJSConfigInAssets: true
