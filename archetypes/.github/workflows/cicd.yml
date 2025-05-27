@@ -1,0 +1,33 @@
+name: "Build, Release, Deploy"
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - "main"
+      - "preview"
+    paths:
+      - "**"
+      - "!.github/**"
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    uses: chnm/.github/.github/workflows/hugo--build-release-deploy.yml@main
+    secrets: inherit
+    with:
+      container-registry: "ghcr.io"
+      container-image-name: "cicd-testing-website"
+      hugo-context-root: "hugo"
+      hugo-devl-url: "https://dev.outandabout.rrchnm.org"
+      hugo-prod-url: "https://dev.outandabout.rrchnm.org"
+      
+      build-artifact-name: "outandabout-website"
+      release-tag-name-type: "iso"
+      
+      website-devl-fqdn: "dev.outandabout.rrchnm.org"
+      website-prod-fqdn: "dev.outandabout.rrchnm.org"
+      
