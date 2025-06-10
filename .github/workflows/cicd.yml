@@ -21,7 +21,7 @@ jobs:
     with:
       container-registry: "ghcr.io"
       container-image-name: "cicd-testing-website"
-      hugo-context-root: "hugo"
+      hugo-context-root: "."
       hugo-devl-url: "https://dev.outandabout.rrchnm.org"
       hugo-prod-url: "https://dev.outandabout.rrchnm.org"
       
