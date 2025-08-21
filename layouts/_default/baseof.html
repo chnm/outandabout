@@ -20,8 +20,14 @@
 		href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap"
 		rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+	<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
 	<link rel="stylesheet" href="/css/custom.css">
+<!--favicon-->
+	<!--Emoji artwork is provided by Twemoji and is licensed under CC-BY 4.0. Accessed from favicon.io-->
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/img/favicon/site.webmanifest">
 
     <!-- Matomo -->
     <script>
@@ -38,7 +44,6 @@
       })();
     </script>
     <!-- End Matomo Code -->
-
 </head>
 
 <body>
@@ -46,12 +51,14 @@
 			{{ block "header" . }}
 			<h1 class="site-title">{{ .Site.Title }}</h1>
 			<p class="tagline">{{ .Site.Params.Tagline }}</p>
-      <nav>
-        <a href="/" class="current">Home</a>
-        <a href="#videos">Videos</a>
-        <a href="#writing">Writing</a>
-        <a href="#maps">Maps</a>
-      </nav>
+      {{ partial "navigation.html" . }}
+			<!--<nav>
+        <a href="/">Home</a>
+        <a href="/videos">Videos</a>
+        <a href="/blog">Writing</a>
+        <a href="/maps">Maps</a>
+		<a href="/about">About</a>
+      </nav>-->
 			{{ end }}
 		</header>
 

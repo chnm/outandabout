@@ -1,9 +1,9 @@
 baseURL: 'https://example.org/'
 languageCode: 'en-us'
-title: 'Out and About'
+title: 'Out and About in Northern Virginia'
 
 params:
-  tagline: "Tagline for the project"
+  tagline: "Exploring local queer history"
   description: 'Description text for the project.'
 
 markup:

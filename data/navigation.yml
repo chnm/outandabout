@@ -1,0 +1,14 @@
+- name: Home
+  link: /
+
+- name: Videos
+  link: /videos/
+
+- name: Writing
+  link: /blog/
+
+- name: Maps
+  link: /maps/
+
+- name: About
+  link: /about/

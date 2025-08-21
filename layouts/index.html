@@ -18,44 +18,19 @@
 
 {{ define "main" }}
 <div id="home">
-  <div id="site-authors">
-    <p>
-      <a href="https://rrchnm.org" class="author">Savannah Scott</a>, George Mason University &lt;<a
-        href="mailto:email@me.edu">email@me.edu</a>&gt;
-      <a href="https://orcid.org/"><img alt="ORCID logo"
-          src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16" /></a>
-    </p>
-    <p>
-      <a href="https://rrchnm.org" class="author">Alexandra Miller</a>, George Mason University &lt;<a
-        href="mailto:email@me.edu">email@me.edu</a>&gt;
-      <a href="https://orcid.org/"><img alt="ORCID logo"
-          src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16" /></a>
-    </p>
-    <p>
-      <a href="https://rrchnm.org" class="author">Hannah LeComte</a>, George Mason University &lt;<a
-        href="mailto:email@me.edu">email@me.edu</a>&gt;
-      <a href="https://orcid.org/"><img alt="ORCID logo"
-          src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16" /></a>
-    </p>
-    <p>
-      <a href="https://rrchnm.org" class="author">Ashleigh Williams</a>, George Mason University &lt;<a
-        href="mailto:email@me.edu">email@me.edu</a>&gt;
-      <a href="https://orcid.org/"><img alt="ORCID logo"
-          src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16" /></a>
-    </p>
-
-  </div>
   {{ .Content }}
 </div>
 
+<!--
 <h2>Videos</h2>
 
 <section id="videos">
   {{ with .Site.GetPage "/videos" }}
     <div class="row video-item">
-      <a href="{{ .Params.link }}">
+      <a href="{{ .RelPermalink }}">
       {{ .Title }}
       </a>
+      <p>we will have top 2</p>
     </div>
   {{ end }}
 </section>
@@ -68,8 +43,22 @@
       <a href="{{ .RelPermalink }}">
         {{ .Title }} 
       </a>
+      <p>we will have top 2</p>
     </div>
   {{ end }}
+</section>
+
+<h2>Maps</h2>
+
+<section id="maps">
+  {{ with .Site.GetPage "/maps" }}
+    <div class="row maps-item">
+      <a href="{{ .RelPermalink }}">
+        {{ .Title }} 
+      </a>
+      <p>we will have top 2</p>
+    </div>
+  {{ end }} -->
 </section>
 
 <section id="citation">

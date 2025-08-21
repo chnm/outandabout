@@ -1,0 +1,5 @@
+<nav>
+  {{ range .Site.Data.navigation }}
+  <a href="{{ .link }}" {{ if eq $.Page.RelPermalink .link }}class="current"{{ end }}>{{ .name }}</a>
+  {{ end }}
+</nav>
