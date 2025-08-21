@@ -1,7 +1,8 @@
 ---
-title: Out and About blog post
+title: Blog
+author:
 date: 2025-05-21
 description: Blog posts from the Out and About project.
 ---
 
-Some blog post content!
+Short essays and blog posts from our team about different aspects of the project.
