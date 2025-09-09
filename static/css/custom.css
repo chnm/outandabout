@@ -28,26 +28,20 @@ header {
   color-scheme: light only;
 }
 
-/* Override any dark mode media queries */
+/* Override any dark mode media queries*/
 @media (prefers-color-scheme: dark) {
-  /*:root {
-    color-scheme: light only;
-  }*/
-  
-  /* Force specific light mode styles */
-  /*body, html {
-    background-color: white !important;
-    color: black !important;
+  :root {
+    color-scheme: light;
+    --bg: #fff;
+    --accent-bg: #f5f7ff;
+    --text: #212121;
+    --text-light: #585858;
+    --accent: #0d47a1;
+    --accent-hover: #1266e2;
+    --accent-text: var(--bg);
+    --code: #d81b60;
+    --preformatted: #444;
+    --marked: #ffdd33;
+    --disabled: #efefef;
   }
-  * {
-    background-color: inherit !important;
-    color: inherit !important;
-  }*/
-
-  /* Ensure images have white backgrounds */
-img {
-  background-color: white !important;
-  /* Optional: add some padding if needed */
-  /* padding: 8px; */
-}
 }
