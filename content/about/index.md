@@ -24,6 +24,9 @@ title: About the Project
       <a href="https://historyarthistory.gmu.edu/people/awill89" target="_blank" class="author">Ashleigh Williams</a>, George Mason University 
     </p>
  </div>
+ <h4>Technical Support</h4>
+ <p>Jason Heppler, RRCHNM</p>
+ <p>Tony Trinh, RRCHNM</p>
  <h3>Contact Us</h3>
  <p>Please reach out to us at <a href="mailto:alx.outandabout@gmail.com">alx.outandabout@gmail.com</a> if you have any comments or questions.</p>
  <h4>Credits</h4>
