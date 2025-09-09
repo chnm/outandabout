@@ -23,3 +23,31 @@ footer .logo {
 header {
     height: 85%;
 }
+
+:root {
+  color-scheme: light only;
+}
+
+/* Override any dark mode media queries */
+@media (prefers-color-scheme: dark) {
+  /*:root {
+    color-scheme: light only;
+  }*/
+  
+  /* Force specific light mode styles */
+  /*body, html {
+    background-color: white !important;
+    color: black !important;
+  }
+  * {
+    background-color: inherit !important;
+    color: inherit !important;
+  }*/
+
+  /* Ensure images have white backgrounds */
+img {
+  background-color: white !important;
+  /* Optional: add some padding if needed */
+  /* padding: 8px; */
+}
+}
