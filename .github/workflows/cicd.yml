@@ -23,11 +23,11 @@ jobs:
       container-image-name: "outandabout-website"
       hugo-context-root: "."
       hugo-devl-url: "https://dev.outandabout.rrchnm.org"
-      hugo-prod-url: "https://dev.outandabout.rrchnm.org"
+      hugo-prod-url: "https://outandaboutnova.org"
       
       build-artifact-name: "outandabout-website"
       release-tag-name-type: "iso"
       
       website-devl-fqdn: "dev.outandabout.rrchnm.org"
-      website-prod-fqdn: "dev.outandabout.rrchnm.org"
+      website-prod-fqdn: "outandaboutnova.org"
       
